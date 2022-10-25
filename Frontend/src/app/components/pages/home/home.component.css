@@ -48,3 +48,24 @@ a:hover{
     background-color: #efff;
 }
 
+{
+    margin-bottom: 2em; /*arrumar isso aqui */
+    width: 100%;
+}
+
+.search-container form{
+    width: 30%;
+    position: relative;
+}
+
+.search-container {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.search-container input{
+    padding: .5em;
+    width: 100%;
+    text-align: center;
+}
