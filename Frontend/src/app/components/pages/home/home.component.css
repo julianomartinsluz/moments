@@ -48,20 +48,19 @@ a:hover{
     background-color: #efff;
 }
 
-{
-    margin-bottom: 2em; /*arrumar isso aqui */
-    width: 100%;
-}
-
 .search-container form{
     width: 30%;
     position: relative;
 }
 
 .search-container {
-    position: absolute;
+    width: 100%;
     top: 8px;
     left: 8px;
+}
+
+.search-container input {
+    margin-bottom: 15px;
 }
 
 .search-container input{

@@ -3,7 +3,7 @@
 
 
 <img 
-src="{{ baseApiUrl }}uploads/{{ moment.image }}"
+src="{{ baseApiUrl }}/uploads/{{ moment.image }}"
 alt="{{moment.title}}"
 />
 
@@ -17,7 +17,7 @@ alt="{{moment.title}}"
 editar
     </a>
 
-    <button class="remove-btn">
+    <button class="remove-btn" (click)="deletar()">
         deletar
     </button>
 </div>

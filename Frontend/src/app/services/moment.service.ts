@@ -20,12 +20,17 @@ export class MomentService {
   }
    
   getMoment(id: number): Observable<Response<Moment>>{
-    const url = `${this.baseApiUrl}/${id}`;
+    const url = `${this.endpoint}/${id}`;
     return this.http.get<Response<Moment>>(url);
   }
 
   createMoment(formData: FormData): Observable<any> {
     return this.http.post(this.endpoint, formData);
+  }
+
+  deleteMoment(id: number): Observable<Response<Moment>>{
+    const url = `${this.endpoint}/${id}`;
+    return this.http.delete<Response<Moment>>(url);
   }
 
 }

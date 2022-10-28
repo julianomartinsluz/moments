@@ -21,9 +21,14 @@ export class MomentComponent implements OnInit {
 
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.momentService.getMoment(id).subscribe((item) => (this.moment = item.data));
+    this.momentService.getMoment(id).subscribe(item => this.moment = item.data);
 
 
+  }
+
+  deletar(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.momentService.deleteMoment(id).subscribe();
   }
 
 }
