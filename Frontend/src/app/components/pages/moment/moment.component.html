@@ -13,11 +13,11 @@ alt="{{moment.title}}"
 </div>
 <div class="actions">
     <h3>Ações:</h3>
-    <a href="/moments/edit/{{moment.id}}" class="edit-btn">
+    <a routerLink="/moments/edit/{{moment.id}}" class="edit-btn">
 editar
     </a>
 
-    <button class="remove-btn" (click)="deletar()">
+    <button class="remove-btn" (click)="deletar(moment.id!)">
         deletar
     </button>
 </div>
