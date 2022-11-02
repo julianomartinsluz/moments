@@ -13,6 +13,7 @@ import { MessagesService } from 'src/app/services/messages.service';
 export class EditMomentComponent implements OnInit {
 moment!: Moment;
 btnText: string = 'Editar';
+btnText2: string = 'Cancelar';
 
 
   constructor(private momentService: MomentService, private route: ActivatedRoute,
@@ -45,5 +46,10 @@ btnText: string = 'Editar';
 
     this.router.navigate(['/'])
   }
+
+  
+ cancel(): void {
+  this.router.navigate([""]);
+}
 
 }
