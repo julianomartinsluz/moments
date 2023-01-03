@@ -1,5 +1,6 @@
 <div class="moment" *ngIf="moment">
     <h1> {{ moment.title }}</h1>
+    <a routerLink="/moments/new">Quero compartilhar meu Momento!</a>
 
 
     <img src="{{ baseApiUrl }}/uploads/{{ moment.image }}" alt="{{moment.title}}" />
